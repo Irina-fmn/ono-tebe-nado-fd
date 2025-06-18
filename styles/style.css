@@ -1,1 +1,143 @@
-/* место для вашего кода */
+.header {
+  height: 293px;
+  padding: 92px 50px 96px 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 13px;
+  list-style: circle;
+}
+
+.header__link {
+  text-underline-offset: 3px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  max-width: 240px;
+  justify-self: end;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-underline-offset: 3px;
+}
+
+.cover {
+  position: relative;
+  padding: 165px 50px 50px 50px;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 60%;
+}
+
+.cover__title {
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 30px;
+  line-height: 115%;
+  position: relative;
+  z-index: 1;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+/* letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
+no-letter-spacing — класс для обнуления общего межбуквенного расстояния у последней буквы; */
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__description-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 22px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 11px 32px 12px 31px;
+  height: 51px;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+
+.lots {
+  margin-top: 180px;
+}
+
+.lots__list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__list-item {
+  position: relative;
+  width: 334px;
+  min-height: 596px;
+}
