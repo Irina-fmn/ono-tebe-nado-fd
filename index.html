@@ -63,10 +63,12 @@
         <ul class="lots__list">
           <li class="lots__list-item">
             <div class="overlay"></div>
-            <a
-              ><article>
-                <h3><a>Фильм режиссёра, который бросил киношколу</a></h3>
-                <p>
+            <a class="card-link"
+              ><article class="card card_type_film">
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -76,15 +78,12 @@
           </li>
           <li class="lots__list-item">
             <div class="overlay"></div>
-            <a
-              ><article>
-                <h3>
-                  <a
-                    >Книга, где описан один скучный день из жизни рекламного
-                    агента</a
-                  >
+            <a class="card-link"
+              ><article class="card card_type_book">
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p>
+                <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -92,20 +91,17 @@
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
                 </p>
-              </article></a
-            >
+              </article>
+            </a>
           </li>
           <li class="lots__list-item">
             <div class="overlay"></div>
-            <a
-              ><article>
-                <h3>
-                  <a
-                    >Картина, которую повторит даже 5-летний сын маминой
-                    подруги</a
-                  >
+            <a class="card-link"
+              ><article class="card card_type_picture">
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p>
+                <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -115,31 +111,33 @@
             >
           </li>
         </ul>
-        <a href="#0">посмотреть больше</a>
+        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="about__logo">
-          <img
-            class="about__round-logo"
-            src="./images/logo-white.svg"
-            alt="логотип на круглом чёрном фоне"
-          />
+        <div class="about__column about__column-left">
+          <div class="about__logo">
+            <img
+              class="about__logo-image"
+              src="./images/logo-white.svg"
+              alt="логотип на круглом чёрном фоне"
+            />
+          </div>
         </div>
-        <div class="about__info">
-          <h2 class="about__info-title">Об аукционе</h2>
+        <div class="about__column">
+          <h2 class="about__title">Об аукционе</h2>
           <div class="about__info-text">
-            <p>
+            <p class="about__text">
               Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
-              на один аукцион. Потому что кому нужен дневник девочки-подростка
-              или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?
+              дорогого антиквариата. Наши лоты вообще не должны были попасть
+              ни&nbsp;на один аукцион. Потому что кому нужен дневник
+              девочки-подростка или картина, которую может нарисовать даже
+              ребёнок? Кому нужны все эти странные вещи, созданные любителями?
             </p>
-            <p>
+            <p class="about__text">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих
+              на&nbsp;критику, кажущуюся простоту или сложность, сейчас без этих
               лотов невозможно представить современную культуру. Когда в эти
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
@@ -148,17 +146,18 @@
         </div>
       </section>
     </main>
-    <!--
     <footer class="footer">
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-        наб. Принсенграхт 263- 265, Амстердам
+        наб. Принсенграхт 263-265, Амстердам
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-item footer__menu-item_active">
-            <a class="footer__menu_link" href="#0">главная</a>
+          <li class="footer__menu-item">
+            <a class="footer__menu_link footer__menu-link_active" href="#0"
+              >главная</a
+            >
           </li>
           <li class="footer__menu-item">
             <a class="footer__menu_link" href="#0">посмотреть лоты</a>
@@ -168,26 +167,35 @@
           </li>
         </ul>
       </nav>
-      <ul class="footer__socials-list">
-        <li class="footer__socials-item">
-          <a
-            >youtube
-            <img src="./images/yt.svg" alt="" />
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
+            <img
+              class="footer__social-icon"
+              src="./images/yt.svg"
+              alt="логотип youtube"
+            />
           </a>
         </li>
-        <li class="footer__socials-item">
-          <a
-            >vk
-            <img src="./images/vk.svg" alt="" />
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
+            <img
+              class="footer__social-icon"
+              src="./images/vk.svg"
+              alt="логотип vk"
+            />
           </a>
         </li>
-        <li class="footer__socials-item">
-          <a
-            >pinterest
-            <img src="./images/pinterest.svg" src="" />
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
+            <img
+              class="footer__social-icon"
+              src="./images/pinterest.svg"
+              src="логотип pinterest"
+            />
           </a>
         </li>
       </ul>
-    </footer>-->
+    </footer>
   </body>
 </html>
