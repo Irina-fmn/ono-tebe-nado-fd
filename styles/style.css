@@ -148,7 +148,8 @@
 
 .lots__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   gap: 25px;
   list-style: none;
 }
@@ -275,6 +276,8 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+/*футер*/
 
 .footer {
   padding: 0 50px 82px;
