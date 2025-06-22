@@ -9,7 +9,6 @@
   display: flex;
   gap: 30px;
   list-style: circle;
-  height: 22px;
 }
 
 .header__links-list-item {
@@ -37,7 +36,6 @@
 }
 
 .header__logo-image {
-  width: 100%;
   height: 100%;
 }
 
@@ -115,7 +113,6 @@
   font-size: 22px;
   line-height: 28px;
   word-spacing: 19px;
-  height: 28px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -128,7 +125,6 @@
   background-color: transparent;
   border: 1px solid #ffffff;
   padding: 11px 32px 12px 31px;
-  height: 51px;
 }
 
 /*лоты*/
@@ -148,7 +144,6 @@
 .lots__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
   gap: 25px;
   list-style: none;
 }
@@ -162,6 +157,7 @@
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -191,7 +187,6 @@
 .lots__look-more-link {
   display: block;
   font-size: 20px;
-  height: 23px;
   margin-left: 40px;
   margin-top: 30px;
   text-decoration-thickness: 1px;
@@ -203,7 +198,6 @@
   text-transform: uppercase;
   font-size: 22px;
   line-height: 120%;
-  height: 82px;
   text-decoration: underline solid 1px;
   text-underline-offset: 3px;
   z-index: 1;
@@ -303,10 +297,4 @@
 .footer__social-link {
   display: block;
   width: 48px;
-  height: 48px;
-}
-
-.footer__social-icon {
-  width: 100%;
-  height: 100%;
 }
